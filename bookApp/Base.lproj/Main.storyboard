@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RET-Lg-nFH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library-->
+        <scene sceneID="Pfh-q5-Aoa">
+            <objects>
+                <viewController id="kFL-Io-rxs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tcU-CF-D4F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oAo-I5-LOm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Library" image="bookmark" catalog="system" selectedImage="bookmark" id="e8r-AW-02H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiW-h8-Luw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1816" y="850"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cdL-wM-rno">
+            <objects>
+                <tabBarController id="RET-Lg-nFH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W30-Wp-PND">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ewh-2e-4ot" kind="relationship" relationship="viewControllers" id="DHp-j2-wvz"/>
+                        <segue destination="j7D-t1-C2i" kind="relationship" relationship="viewControllers" id="ytc-Rj-dfu"/>
+                        <segue destination="kFL-Io-rxs" kind="relationship" relationship="viewControllers" id="lDb-pe-pOF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sp4-Vr-9tf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-997" y="130"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="cz4-AC-4rc">
+            <objects>
+                <viewController id="j7D-t1-C2i" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lwV-Xr-Hrb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Wjy-ew-BgJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="Tk9-eJ-l4C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3s-4Z-Hh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="867"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="kgq-OC-mEN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ewh-2e-4ot" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="hQr-Bu-MzA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Aq-WM-ucM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XEJ-gY-ujy" kind="relationship" relationship="rootViewController" id="8Dx-mD-JQu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qss-6H-fqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61" y="145"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="blb-GW-U1s">
+            <objects>
+                <viewController id="XEJ-gY-ujy" customClass="BookCellController" customModule="bookApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wa6-Iq-iTl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lrg-HX-cyq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.0098542300980000008" green="0.13653364779999999" blue="0.1865940988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aCc-G5-kRD">
+                                    <size key="itemSize" width="200" height="250"/>
+                                    <size key="headerReferenceSize" width="50" height="67"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bookCells" id="6Kz-xy-Ess" customClass="BookCell" customModule="bookApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67" width="200" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ub7-km-yZZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hgu-lS-soU">
+                                                    <rect key="frame" x="10" y="0.0" width="180" height="152"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.44998598099999998" blue="0.69509845969999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yb-fJ-dJt">
+                                                    <rect key="frame" x="10" y="160" width="42.5" height="24"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkB-nf-Zd9">
+                                                    <rect key="frame" x="10" y="184" width="42.5" height="25"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thy-gg-QQn">
+                                                    <rect key="frame" x="10" y="217" width="34" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="Crg-Xl-xPj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPh-uq-Xyg">
+                                                    <rect key="frame" x="52" y="217" width="105" height="20"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QkB-nf-Zd9" firstAttribute="top" secondItem="2yb-fJ-dJt" secondAttribute="bottom" id="2kd-aY-r7Z"/>
+                                                <constraint firstItem="fPh-uq-Xyg" firstAttribute="baseline" secondItem="thy-gg-QQn" secondAttribute="firstBaseline" id="2wU-Sc-7UB"/>
+                                                <constraint firstItem="Hgu-lS-soU" firstAttribute="top" secondItem="Ub7-km-yZZ" secondAttribute="top" id="3HZ-8z-8q7"/>
+                                                <constraint firstItem="2yb-fJ-dJt" firstAttribute="leading" secondItem="QkB-nf-Zd9" secondAttribute="leading" id="3eO-mx-XuC"/>
+                                                <constraint firstItem="fPh-uq-Xyg" firstAttribute="top" secondItem="Hgu-lS-soU" secondAttribute="bottom" constant="65" id="53o-1o-tJn"/>
+                                                <constraint firstItem="Hgu-lS-soU" firstAttribute="leading" secondItem="Ub7-km-yZZ" secondAttribute="leading" constant="10" id="9SX-qt-q8M"/>
+                                                <constraint firstItem="fPh-uq-Xyg" firstAttribute="leading" secondItem="thy-gg-QQn" secondAttribute="trailing" constant="8" id="K2p-mK-P6h"/>
+                                                <constraint firstItem="fPh-uq-Xyg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="thy-gg-QQn" secondAttribute="trailing" constant="8" symbolic="YES" id="cxm-e4-zoK"/>
+                                                <constraint firstItem="2yb-fJ-dJt" firstAttribute="trailing" secondItem="QkB-nf-Zd9" secondAttribute="trailing" id="egC-9Q-dqH"/>
+                                                <constraint firstAttribute="bottom" secondItem="2yb-fJ-dJt" secondAttribute="bottom" constant="66" id="f3G-mU-utF"/>
+                                                <constraint firstItem="2yb-fJ-dJt" firstAttribute="leading" secondItem="Hgu-lS-soU" secondAttribute="leading" id="gx7-LR-b4J"/>
+                                                <constraint firstItem="thy-gg-QQn" firstAttribute="centerY" secondItem="fPh-uq-Xyg" secondAttribute="centerY" id="o5v-4Q-HV4"/>
+                                                <constraint firstItem="2yb-fJ-dJt" firstAttribute="top" secondItem="Hgu-lS-soU" secondAttribute="bottom" constant="8" id="oT6-i4-YMo"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hgu-lS-soU" secondAttribute="trailing" constant="10" id="sfE-Mf-gbq"/>
+                                                <constraint firstItem="thy-gg-QQn" firstAttribute="top" secondItem="QkB-nf-Zd9" secondAttribute="bottom" constant="8" symbolic="YES" id="x2z-bO-w5Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="fPh-uq-Xyg" secondAttribute="trailing" constant="43" id="xHG-p7-BN6"/>
+                                                <constraint firstItem="2yb-fJ-dJt" firstAttribute="leading" secondItem="thy-gg-QQn" secondAttribute="leading" id="yyd-uN-Y4n"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.0057841031810000002" green="0.13643869759999999" blue="0.1906335056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="200" height="250"/>
+                                        <connections>
+                                            <outlet property="bookAuthor" destination="QkB-nf-Zd9" id="Cr0-LT-Q5v"/>
+                                            <outlet property="bookDuration" destination="fPh-uq-Xyg" id="r6K-ee-M4T"/>
+                                            <outlet property="bookImage" destination="Hgu-lS-soU" id="yTS-hO-hI3"/>
+                                            <outlet property="bookTitle" destination="2yb-fJ-dJt" id="E4L-U3-7IZ"/>
+                                            <outlet property="bookType" destination="thy-gg-QQn" id="TXI-s9-Fix"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CellSection" id="0kL-gB-C7L" customClass="CellSection" customModule="bookApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looooooooooooooong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edn-GI-XaB">
+                                            <rect key="frame" x="8" y="8" width="208" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="descriptiondescriptiondescriptionnnnnnnnnnnnnnnnnnnnnnnnnnn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddX-bR-8kp">
+                                            <rect key="frame" x="8" y="38" width="331" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="11"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Access" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-jG-Mt0">
+                                            <rect key="frame" x="355" y="12" width="35" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="11"/>
+                                            <color key="textColor" red="0.13801512120000001" green="0.73867714409999996" blue="0.43269738549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="access" destination="Qrk-jG-Mt0" id="kMd-AR-rtN"/>
+                                        <outlet property="bookDescription" destination="ddX-bR-8kp" id="snt-P0-p4X"/>
+                                        <outlet property="title" destination="Edn-GI-XaB" id="lXh-hQ-OpC"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="XEJ-gY-ujy" id="65w-LO-xH0"/>
+                                    <outlet property="delegate" destination="XEJ-gY-ujy" id="B9n-ho-y50"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0098542300980000008" green="0.13653364779999999" blue="0.1865940988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lrg-HX-cyq" firstAttribute="top" secondItem="1D5-Re-xrq" secondAttribute="top" id="pRu-OU-mTw"/>
+                            <constraint firstItem="1D5-Re-xrq" firstAttribute="bottom" secondItem="lrg-HX-cyq" secondAttribute="bottom" id="pZM-8q-cQn"/>
+                            <constraint firstItem="lrg-HX-cyq" firstAttribute="leading" secondItem="1D5-Re-xrq" secondAttribute="leading" id="xdi-9e-vgb"/>
+                            <constraint firstItem="1D5-Re-xrq" firstAttribute="trailing" secondItem="lrg-HX-cyq" secondAttribute="trailing" id="zzX-Rk-LNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1D5-Re-xrq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="OY2-g4-caW">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="3Im-I6-n89"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="osf-Kr-pFj" kind="show" identifier="BookDetailsScreen" id="bBp-rK-6lt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sft-c4-zj0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.56521739130437" y="144.64285714285714"/>
+        </scene>
+        <!--Second Screen Controller-->
+        <scene sceneID="4Yr-fg-OyN">
+            <objects>
+                <viewController id="osf-Kr-pFj" customClass="SecondScreenController" customModule="bookApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="51C-bg-a6j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLu-yx-9DO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="224"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-oB-fPX">
+                                        <rect key="frame" x="117" y="36" width="180" height="152"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="3Nj-cF-Jz7"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.068060986700000006" green="0.1903635263" blue="0.28595086930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HnR-oB-fPX" firstAttribute="centerY" secondItem="wLu-yx-9DO" secondAttribute="centerY" id="WYL-aA-vAO"/>
+                                    <constraint firstItem="HnR-oB-fPX" firstAttribute="top" secondItem="wLu-yx-9DO" secondAttribute="top" constant="36" id="rPF-VH-WKl"/>
+                                    <constraint firstItem="HnR-oB-fPX" firstAttribute="centerX" secondItem="wLu-yx-9DO" secondAttribute="centerX" id="xgM-ih-ppP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFk-rG-sZy">
+                                <rect key="frame" x="0.0" y="312" width="414" height="501"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium members pay ₦5,500.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COk-ys-FJd">
+                                        <rect key="frame" x="98" y="36" width="218" height="17"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elon Musk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFo-5R-7ew">
+                                        <rect key="frame" x="41" y="72" width="131" height="38"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ashlee Vance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-bI-bPd">
+                                        <rect key="frame" x="41" y="108" width="100" height="23"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJ2-2P-gLQ" userLabel="first horizontal line">
+                                        <rect key="frame" x="39" y="207" width="335" height="2"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="Pde-gA-kQ3" userLabel="second horizontal line">
+                                        <rect key="frame" x="39" y="258.5" width="335" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <viewLayoutGuide key="safeArea" id="fJx-Lv-FLC"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="UZP-U8-1Am" userLabel="second horizontal line">
+                                        <rect key="frame" x="39" y="316" width="335" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <viewLayoutGuide key="safeArea" id="bgX-eu-8fZ"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen to a sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-e4-QIi">
+                                        <rect key="frame" x="39" y="229" width="146" height="24"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Uc-xe-Rkk">
+                                        <rect key="frame" x="354" y="230" width="20" height="22"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="play.circle.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuI-Yd-Z2k">
+                                        <rect key="frame" x="39" y="281" width="20" height="22"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="clock" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13h 24min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kf-6D-RdN">
+                                        <rect key="frame" x="63" y="281" width="69" height="21"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 chapters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-9O-iWx">
+                                        <rect key="frame" x="209" y="281" width="79" height="21"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozp-CP-FDr">
+                                        <rect key="frame" x="180" y="281" width="21" height="21"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="list.bullet" catalog="system"/>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0py-Nf-wBM">
+                                        <rect key="frame" x="35" y="373" width="345" height="128"/>
+                                        <color key="backgroundColor" red="0.046903282400000003" green="0.13234016300000001" blue="0.1905899942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Slw-iS-LOD"/>
+                                        </constraints>
+                                        <string key="text">In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary life of Steve Jobs</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Narrated by Fred Sanders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQ2-y8-bF1">
+                                        <rect key="frame" x="41" y="139" width="160" height="20"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publisher Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-09-RPB">
+                                        <rect key="frame" x="41" y="343" width="171" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.051180355249999997" green="0.13243672249999999" blue="0.1865469813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Pde-gA-kQ3" firstAttribute="top" secondItem="ZVN-e4-QIi" secondAttribute="bottom" constant="5.5" id="0I0-MG-40p"/>
+                                    <constraint firstItem="5Kf-6D-RdN" firstAttribute="top" secondItem="Ozp-CP-FDr" secondAttribute="top" id="3KN-wt-OMv"/>
+                                    <constraint firstItem="SuI-Yd-Z2k" firstAttribute="top" secondItem="5Kf-6D-RdN" secondAttribute="top" id="4cW-TX-SZf"/>
+                                    <constraint firstItem="COk-ys-FJd" firstAttribute="centerX" secondItem="BFk-rG-sZy" secondAttribute="centerX" id="5mS-36-67L"/>
+                                    <constraint firstItem="5Kf-6D-RdN" firstAttribute="leading" secondItem="BFk-rG-sZy" secondAttribute="leading" constant="63" id="EZh-Qa-6kr"/>
+                                    <constraint firstItem="ZVN-e4-QIi" firstAttribute="leading" secondItem="UZP-U8-1Am" secondAttribute="leading" id="FeM-Ku-gyc"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CFo-5R-7ew" secondAttribute="trailing" constant="20" symbolic="YES" id="GIy-qV-j8L"/>
+                                    <constraint firstItem="7Uc-xe-Rkk" firstAttribute="leading" secondItem="ZVN-e4-QIi" secondAttribute="trailing" constant="169" id="Ho9-ow-EDf"/>
+                                    <constraint firstItem="5Kf-6D-RdN" firstAttribute="centerY" secondItem="Ozp-CP-FDr" secondAttribute="centerY" id="JPo-3a-o7N"/>
+                                    <constraint firstItem="pJ2-2P-gLQ" firstAttribute="top" secondItem="BFk-rG-sZy" secondAttribute="top" constant="207" id="K8T-q7-gpL"/>
+                                    <constraint firstItem="ZVN-e4-QIi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pJ2-2P-gLQ" secondAttribute="leading" id="LG1-go-3Ra"/>
+                                    <constraint firstItem="ZVN-e4-QIi" firstAttribute="top" secondItem="pJ2-2P-gLQ" secondAttribute="bottom" constant="20" id="NzL-XQ-FT8"/>
+                                    <constraint firstItem="SuI-Yd-Z2k" firstAttribute="leading" secondItem="UZP-U8-1Am" secondAttribute="leading" id="OAB-8a-iIe"/>
+                                    <constraint firstItem="Pe2-bI-bPd" firstAttribute="top" secondItem="BFk-rG-sZy" secondAttribute="top" constant="108" id="QaP-WH-CCo"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sQ2-y8-bF1" secondAttribute="trailing" constant="20" symbolic="YES" id="SFG-rG-FC4"/>
+                                    <constraint firstItem="UZP-U8-1Am" firstAttribute="top" secondItem="5Kf-6D-RdN" secondAttribute="bottom" constant="14" id="UeS-CA-aoh"/>
+                                    <constraint firstItem="Pe2-bI-bPd" firstAttribute="top" secondItem="COk-ys-FJd" secondAttribute="bottom" constant="55" id="Z6i-Ql-G5q"/>
+                                    <constraint firstItem="COk-ys-FJd" firstAttribute="top" secondItem="BFk-rG-sZy" secondAttribute="top" constant="36" id="aKu-GX-9Kx"/>
+                                    <constraint firstItem="5Kf-6D-RdN" firstAttribute="baseline" secondItem="HDr-9O-iWx" secondAttribute="baseline" id="ajS-gO-vwj"/>
+                                    <constraint firstItem="0py-Nf-wBM" firstAttribute="leading" secondItem="BFk-rG-sZy" secondAttribute="leading" constant="35" id="bDv-Ni-wFK"/>
+                                    <constraint firstItem="0py-Nf-wBM" firstAttribute="trailing" secondItem="UZP-U8-1Am" secondAttribute="trailing" constant="6" id="cOY-hG-Igs"/>
+                                    <constraint firstItem="pJ2-2P-gLQ" firstAttribute="trailing" secondItem="7Uc-xe-Rkk" secondAttribute="trailing" id="dKG-CY-N0i"/>
+                                    <constraint firstItem="pJ2-2P-gLQ" firstAttribute="top" secondItem="sQ2-y8-bF1" secondAttribute="bottom" constant="48" id="h6W-Jc-CUL"/>
+                                    <constraint firstItem="SuI-Yd-Z2k" firstAttribute="top" secondItem="HDr-9O-iWx" secondAttribute="top" id="j3F-i3-nSm"/>
+                                    <constraint firstItem="UZP-U8-1Am" firstAttribute="top" secondItem="SuI-Yd-Z2k" secondAttribute="bottom" constant="13" id="kTu-jK-Xgj"/>
+                                    <constraint firstItem="CFo-5R-7ew" firstAttribute="top" secondItem="COk-ys-FJd" secondAttribute="bottom" constant="19" id="mvW-W3-Oc3"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pe2-bI-bPd" secondAttribute="trailing" constant="20" symbolic="YES" id="nQk-G8-T6x"/>
+                                    <constraint firstItem="Pe2-bI-bPd" firstAttribute="leading" secondItem="sQ2-y8-bF1" secondAttribute="leading" id="ori-gZ-eZF"/>
+                                    <constraint firstAttribute="trailing" secondItem="HDr-9O-iWx" secondAttribute="trailing" constant="126" id="pCb-mX-dDf"/>
+                                    <constraint firstItem="COk-ys-FJd" firstAttribute="leading" secondItem="BFk-rG-sZy" secondAttribute="leading" constant="98" id="sbx-DJ-9mv"/>
+                                    <constraint firstItem="Pe2-bI-bPd" firstAttribute="leading" secondItem="BFk-rG-sZy" secondAttribute="leading" constant="41" id="srP-m5-mYt"/>
+                                    <constraint firstItem="ZVN-e4-QIi" firstAttribute="centerY" secondItem="7Uc-xe-Rkk" secondAttribute="centerY" id="tks-gK-fsF"/>
+                                    <constraint firstItem="HDr-9O-iWx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ozp-CP-FDr" secondAttribute="trailing" constant="8" symbolic="YES" id="uQz-Ge-Bmd"/>
+                                    <constraint firstItem="Ozp-CP-FDr" firstAttribute="leading" secondItem="5Kf-6D-RdN" secondAttribute="trailing" constant="48" id="xqK-ij-3QH"/>
+                                    <constraint firstAttribute="bottom" secondItem="0py-Nf-wBM" secondAttribute="bottom" id="yKh-bp-Le3"/>
+                                    <constraint firstItem="pJ2-2P-gLQ" firstAttribute="leading" secondItem="ZVN-e4-QIi" secondAttribute="leading" id="yzA-5S-bxi"/>
+                                    <constraint firstItem="Pe2-bI-bPd" firstAttribute="leading" secondItem="CFo-5R-7ew" secondAttribute="leading" id="z5y-XX-7iy"/>
+                                    <constraint firstItem="5Kf-6D-RdN" firstAttribute="firstBaseline" secondItem="HDr-9O-iWx" secondAttribute="baseline" id="zfa-1q-93I"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUM-Uc-MUr">
+                                <rect key="frame" x="45" y="289" width="325" height="44"/>
+                                <color key="backgroundColor" red="0.42646056409999999" green="0.86050873989999999" blue="0.53752046819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="B1z-wO-uep"/>
+                                    <constraint firstAttribute="height" constant="44" id="V2s-KQ-gsS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title=" Buy Audiobook - ₦10,900.00" image="cart" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0057841031810000002" green="0.13643869759999999" blue="0.1906335056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RUM-Uc-MUr" firstAttribute="top" secondItem="37D-Cm-0F2" secondAttribute="top" constant="201" id="B3U-Tw-ct8"/>
+                            <constraint firstItem="37D-Cm-0F2" firstAttribute="trailing" secondItem="BFk-rG-sZy" secondAttribute="trailing" id="Bdp-mV-9Fa"/>
+                            <constraint firstItem="RUM-Uc-MUr" firstAttribute="centerX" secondItem="wLu-yx-9DO" secondAttribute="centerX" constant="0.5" id="C7M-eV-Usp"/>
+                            <constraint firstItem="wLu-yx-9DO" firstAttribute="leading" secondItem="37D-Cm-0F2" secondAttribute="leading" id="Ijj-Fq-ojq"/>
+                            <constraint firstItem="37D-Cm-0F2" firstAttribute="trailing" secondItem="wLu-yx-9DO" secondAttribute="trailing" id="PKm-kp-HLN"/>
+                            <constraint firstItem="BFk-rG-sZy" firstAttribute="leading" secondItem="37D-Cm-0F2" secondAttribute="leading" id="UcL-kL-ya9"/>
+                            <constraint firstItem="37D-Cm-0F2" firstAttribute="bottom" secondItem="BFk-rG-sZy" secondAttribute="bottom" id="Vm7-Jd-77D"/>
+                            <constraint firstItem="wLu-yx-9DO" firstAttribute="top" secondItem="37D-Cm-0F2" secondAttribute="top" id="o5i-cJ-OqR"/>
+                            <constraint firstItem="wLu-yx-9DO" firstAttribute="height" secondItem="51C-bg-a6j" secondAttribute="height" multiplier="1:4" id="opO-EK-0Jd"/>
+                            <constraint firstItem="BFk-rG-sZy" firstAttribute="top" secondItem="wLu-yx-9DO" secondAttribute="bottom" id="tno-ID-B4M"/>
+                            <constraint firstItem="CFo-5R-7ew" firstAttribute="leading" secondItem="RUM-Uc-MUr" secondAttribute="leading" constant="-4" id="zO3-GB-xbP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="37D-Cm-0F2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X2Y-SW-itP"/>
+                    <connections>
+                        <outlet property="bookAuthor" destination="Pe2-bI-bPd" id="JO3-LR-f6Z"/>
+                        <outlet property="bookDuration" destination="5Kf-6D-RdN" id="gx3-Dq-fpb"/>
+                        <outlet property="bookImage" destination="HnR-oB-fPX" id="czA-aA-kek"/>
+                        <outlet property="bookTitle" destination="CFo-5R-7ew" id="lMd-qT-mGY"/>
+                        <outlet property="narrator" destination="Pe2-bI-bPd" id="m0K-8c-lEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eG2-2V-i1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527.536231884058" y="144.64285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -1,0 +1,160 @@
+
+
+{
+  "title": "Latest Blinks",
+  "description": "bookTitles recently added on blinkist",
+  "access": "locked",
+  "books": [
+    {
+      "bookTitle": "Company Of Ghosts",
+      "bookAuthor": "Andrew Author",
+      "bookType": "audiobook .",
+      "bookDuration": "10",
+      "bookImage": "companyOfGhosts"
+      
+    },
+    {
+      "bookTitle": "Dont Go There",
+      "bookAuthor": "Juliana Silva",
+      "bookType": "hardcover .",
+      "bookDuration": "5",
+      "bookImage": "dontGoThere"
+    },
+    {
+      "bookTitle": "No Place Like Here",
+      "bookAuthor": "Christina June",
+      "bookType": "audiobook .",
+      "bookDuration": "12",
+      "bookImage": "noPlaceLikeHere"
+    },
+    {
+      "bookTitle": "Shield Of Heroes",
+      "bookAuthor": "John Premade",
+      "bookType": "audiobook .",
+      "bookDuration": "10",
+      "bookImage": "shieldOfHades"
+    },
+    {
+      "bookTitle": "The Girl In Red",
+      "bookAuthor": "Christina Henry",
+      "bookType": "e-book .",
+      "bookDuration": "8",
+      "bookImage": "theGirlInRed"
+    },
+    {
+      "bookTitle": "The King",
+      "bookAuthor": "Nora Barrett",
+      "bookType": "audiobook .",
+      "bookDuration": "14",
+      "bookImage": "theKing"
+    },
+    {
+      "bookTitle": "Child Of The Kindred",
+      "bookAuthor": "M.T. Magee",
+      "bookType": "hardcover .",
+      "bookDuration": "17",
+      "bookImage": "kindred"
+    },
+    {
+      "bookTitle": "White Stag",
+      "bookAuthor": "Kara Barbieri",
+      "bookType": "audiobook .",
+      "bookDuration": "14",
+      "bookImage": "whiteStag"
+    },
+    {
+      "bookTitle": "Traitor's game",
+      "bookAuthor": "Jeniffer A. Nielsen",
+      "bookType": "audiobook .",
+      "bookDuration": "20",
+      "bookImage": "traitor"
+    },
+    {
+      "bookTitle": "Infinite",
+      "bookAuthor": "Christopher G. Nuttall",
+      "bookType": "e-book .",
+      "bookDuration": "14",
+      "bookImage": "infinite"
+    }
+  ],
+  
+  "title": "Previos Blinks",
+  "description": "bookTitles previously added on blinkist",
+  "access": "free",
+  "books": [
+    {
+      "bookTitle": "Company Of Ghosts",
+      "bookAuthor": "Andrew Author",
+      "bookType": "audiobook .",
+      "bookDuration": "10",
+      "bookImage": "companyOfGhosts"
+      
+    },
+    {
+      "bookTitle": "Dont Go There",
+      "bookAuthor": "Juliana Silva",
+      "bookType": "hardcover .",
+      "bookDuration": "5",
+      "bookImage": "dontGoThere"
+    },
+    {
+      "bookTitle": "No Place Like Here",
+      "bookAuthor": "Christina June",
+      "bookType": "audiobook .",
+      "bookDuration": "12",
+      "bookImage": "noPlaceLikeHere"
+    },
+    {
+      "bookTitle": "Shield Of Heroes",
+      "bookAuthor": "John Premade",
+      "bookType": "audiobook .",
+      "bookDuration": "10",
+      "bookImage": "shieldOfHades"
+    },
+    {
+      "bookTitle": "The Girl In Red",
+      "bookAuthor": "Christina Henry",
+      "bookType": "e-book .",
+      "bookDuration": "8",
+      "bookImage": "theGirlInRed"
+    },
+    {
+      "bookTitle": "The King",
+      "bookAuthor": "Nora Barrett",
+      "bookType": "audiobook .",
+      "bookDuration": "14",
+      "bookImage": "theKing"
+    },
+    {
+      "bookTitle": "Child Of The Kindred",
+      "bookAuthor": "M.T. Magee",
+      "bookType": "hardcover .",
+      "bookDuration": "17",
+      "bookImage": "kindred"
+    },
+    {
+      "bookTitle": "White Stag",
+      "bookAuthor": "Kara Barbieri",
+      "bookType": "audiobook .",
+      "bookDuration": "14",
+      "bookImage": "whiteStag"
+    },
+    {
+      "bookTitle": "Traitor's game",
+      "bookAuthor": "Jeniffer A. Nielsen",
+      "bookType": "audiobook .",
+      "bookDuration": "20",
+      "bookImage": "traitor"
+    },
+    {
+      "bookTitle": "Infinite",
+      "bookAuthor": "Christopher G. Nuttall",
+      "bookType": "e-book .",
+      "bookDuration": "14",
+      "bookImage": "infinite"
+    }
+  ]
+}
+
+
+
